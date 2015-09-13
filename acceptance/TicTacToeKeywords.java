@@ -1,7 +1,7 @@
 import edu.jsu.mcis.*;
 
 public class TicTacToeKeywords {
-	private TicTacToe t = new TicTacToe(); //put name of your class here
+	public TicTacToe t = new TicTacToe(); //put name of your class here
 
 	public void startNewGame() {
 		t = new TicTacToe(); //Start game here

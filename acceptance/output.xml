@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.9 (Jython 2.7.0 on java1.8.0_60)" generated="20150909 21:44:26.776">
+<robot generator="Robot 2.9 (Jython 2.7.0 on java1.8.0_60)" generated="20150910 16:26:56.369">
 <suite source="/Users/kurtisgrabenmba/Documents/Programming/exampleTicTacToe/tic-tac-toe/acceptance/TicTacToeTests.txt" name="TicTacToeTests" id="s1">
 <test name="Win Diagonally as X" id="s1-t1">
 <kw name="Start New Game">
-<msg level="FAIL" timestamp="20150909 21:44:27.311">No keyword with name 'Start New Game' found.</msg>
-<status endtime="20150909 21:44:27.313" starttime="20150909 21:44:27.310" status="FAIL"></status>
+<msg level="FAIL" timestamp="20150910 16:26:56.762">No keyword with name 'Start New Game' found.</msg>
+<status endtime="20150910 16:26:56.763" starttime="20150910 16:26:56.761" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20150909 21:44:27.322" starttime="20150909 21:44:27.282" status="FAIL">No keyword with name 'Start New Game' found.</status>
+<status critical="yes" endtime="20150910 16:26:56.765" starttime="20150910 16:26:56.743" status="FAIL">No keyword with name 'Start New Game' found.</status>
 </test>
 <test name="Win Horizontally as O" id="s1-t2">
 <kw name="Start New Game">
-<msg level="FAIL" timestamp="20150909 21:44:27.348">No keyword with name 'Start New Game' found.</msg>
-<status endtime="20150909 21:44:27.349" starttime="20150909 21:44:27.347" status="FAIL"></status>
+<msg level="FAIL" timestamp="20150910 16:26:56.784">No keyword with name 'Start New Game' found.</msg>
+<status endtime="20150910 16:26:56.785" starttime="20150910 16:26:56.783" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20150909 21:44:27.351" starttime="20150909 21:44:27.327" status="FAIL">No keyword with name 'Start New Game' found.</status>
+<status critical="yes" endtime="20150910 16:26:56.787" starttime="20150910 16:26:56.768" status="FAIL">No keyword with name 'Start New Game' found.</status>
 </test>
 <test name="Force a Tie" id="s1-t3">
 <kw name="Start New Game">
-<msg level="FAIL" timestamp="20150909 21:44:27.379">No keyword with name 'Start New Game' found.</msg>
-<status endtime="20150909 21:44:27.380" starttime="20150909 21:44:27.378" status="FAIL"></status>
+<msg level="FAIL" timestamp="20150910 16:26:56.808">No keyword with name 'Start New Game' found.</msg>
+<status endtime="20150910 16:26:56.809" starttime="20150910 16:26:56.807" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20150909 21:44:27.382" starttime="20150909 21:44:27.357" status="FAIL">No keyword with name 'Start New Game' found.</status>
+<status critical="yes" endtime="20150910 16:26:56.811" starttime="20150910 16:26:56.789" status="FAIL">No keyword with name 'Start New Game' found.</status>
 </test>
-<status endtime="20150909 21:44:27.386" starttime="20150909 21:44:26.796" status="FAIL"></status>
+<status endtime="20150910 16:26:56.813" starttime="20150910 16:26:56.393" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
@@ -36,7 +36,7 @@
 </suite>
 </statistics>
 <errors>
-<msg level="ERROR" timestamp="20150909 21:44:27.275">Error in file '/Users/kurtisgrabenmba/Documents/Programming/exampleTicTacToe/tic-tac-toe/acceptance/TicTacToeTests.txt': Importing test library 'TicTacToeKeywords' failed: ImportError: No module named TicTacToeKeywords
+<msg level="ERROR" timestamp="20150910 16:26:56.737">Error in file '/Users/kurtisgrabenmba/Documents/Programming/exampleTicTacToe/tic-tac-toe/acceptance/TicTacToeTests.txt': Importing test library 'TicTacToeKeywords' failed: ImportError: No module named TicTacToeKeywords
 Traceback (most recent call last):
   None
 PYTHONPATH:

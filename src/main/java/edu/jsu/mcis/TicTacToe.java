@@ -2,6 +2,7 @@ package edu.jsu.mcis;
 
 public class TicTacToe {
 	mark[][] board = new mark[3][3];
+	int playerTurn = 1;
 
 	public static void main(String[] args) {
 
@@ -17,8 +18,16 @@ public class TicTacToe {
 		}
 	}
 
-	public void setMark(int row, int column, mark character) {
-		board[row][column] = character;
+	public void setMark(int row, int column) {
+		if (checkMark(row, column) == true) {
+			if (playerTurn % 2 == 0) {
+				board[row][column] = mark.OMARK;
+			}
+			else {
+				board[row][column] = mark.XMARK;
+			}
+			playerTurn += 1;
+		}
 	}
 
 	public mark getMark(int row, int column) {
@@ -82,12 +91,12 @@ public class TicTacToe {
 		}
 		return false;
 	}
-
+/*
 	public mark resetBoard() {
 		for (int row = 0; row < 3; row++) {
 			for (int column = 0; column < 3; column++){
 				board[row][column] = mark.EMPTY;
 			}
 		}
-	}	
+	}*/
 }
