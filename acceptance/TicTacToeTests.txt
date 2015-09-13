@@ -5,12 +5,12 @@ Library           TicTacToeKeywords
 *** Keywords ***
 Check Location   [Arguments]   ${row}    ${col}    ${mark}
     ${m}=   Get Mark    ${row}    ${col}
-	Should Be Equal    ${m}    ${mark}    
+	Should Be Equal    ${m}    ${mark}
 
 Winner Should Be   [Arguments]       ${mark}
     ${m}=   Get Winner
-	Should Be Equal    ${m}    ${mark}    
-	
+	Should Be Equal    ${m}    ${mark}
+
 
 *** Test Cases ***
 Win Diagonally as X
@@ -64,4 +64,3 @@ Force a Tie
     Mark Location       2   2
     Check Location  2   2   X
     Winner Should Be    TIE
-

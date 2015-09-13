@@ -1,10 +1,12 @@
 package edu.jsu.mcis;
+import java.util.*;
 
 public class TicTacToe {
 	mark[][] board = new mark[3][3];
 	int playerTurn = 1;
 
 	public static void main(String[] args) {
+		TicTacToe t = new TicTacToe();
 
 	}
 
@@ -91,12 +93,4 @@ public class TicTacToe {
 		}
 		return false;
 	}
-/*
-	public mark resetBoard() {
-		for (int row = 0; row < 3; row++) {
-			for (int column = 0; column < 3; column++){
-				board[row][column] = mark.EMPTY;
-			}
-		}
-	}*/
 }
