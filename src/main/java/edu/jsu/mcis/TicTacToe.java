@@ -1,5 +1,6 @@
 package edu.jsu.mcis;
 import java.util.*;
+import javax.swing.*;
 
 public class TicTacToe {
 	mark[][] board = new mark[3][3];
@@ -12,7 +13,7 @@ public class TicTacToe {
 
 	public enum mark {XMARK, OMARK, EMPTY}
 
-	public TicTacToe(){
+	public TicTacToe() {
 		for (int row = 0; row < 3; row++) {
 			for (int column = 0; column < 3; column++){
 				board[row][column] = mark.EMPTY;
