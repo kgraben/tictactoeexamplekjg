@@ -3,25 +3,25 @@ Library           SwingLibrary
 
 *** User Keywords ***
 Start New Game
-    Start Application   edu.jsu.mcis.TicTacToeGame
-    Select Window       Tic Tac Toe
+    Start Application   edu.jsu.mcis.TicTacToeGame //name of class
+    Select Window       Tic Tac Toe //jframe window name
 
-Mark Location   [Arguments]     ${row}      ${col}
-    ${component}=   Catenate    SEPARATOR=  Location    ${row}  ${col}
+Mark Location   [Arguments]     ${row}      ${col}  //name buttons asswipe!
+    ${component}=   Catenate    SEPARATOR=  Location    ${row}  ${col} //we want to name it Location00 where 00 is rowcolumn
     Click On Component  ${component}
 
 Check Location  [Arguments]     ${row}  ${col}  ${mark}
     ${component}=   Catenate    SEPARATOR=  Location    ${row}  ${col}
     Label Text Should Be    ${component}    ${mark}
-    
+
 Winner Should Be    [Arguments]     ${winner}
     Select Dialog   Game Over
     ${message}=     Catenate    The winner is   ${winner}
     Label Text Should Be    OptionPane.label    ${message}
     Close Dialog    Game Over
     Close Window    Tic Tac Toe
-    
-    
+
+
 *** Test Cases ***
 Win Diagonally as X
     Start New Game
@@ -74,6 +74,3 @@ Force a Tie
     Mark Location   2   2
     Check Location  2   2   X
     Winner Should Be    TIE
-
-    
-    
