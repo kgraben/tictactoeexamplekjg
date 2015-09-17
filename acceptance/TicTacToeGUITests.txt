@@ -3,11 +3,11 @@ Library           SwingLibrary
 
 *** User Keywords ***
 Start New Game
-    Start Application   edu.jsu.mcis.TicTacToeGame //name of class
-    Select Window       Tic Tac Toe //jframe window name
+    Start Application   edu.jsu.mcis.GameBoard
+    Select Window       Tic-Tac-Toe 
 
-Mark Location   [Arguments]     ${row}      ${col}  //name buttons asswipe!
-    ${component}=   Catenate    SEPARATOR=  Location    ${row}  ${col} //we want to name it Location00 where 00 is rowcolumn
+Mark Location   [Arguments]     ${row}      ${col}
+    ${component}=   Catenate    SEPARATOR=  Location    ${row}  ${col}
     Click On Component  ${component}
 
 Check Location  [Arguments]     ${row}  ${col}  ${mark}

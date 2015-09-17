@@ -28,8 +28,7 @@ public class GameBoard extends JFrame {
         button[row][column] = new JButton("");
         button[row][column].setName(Integer.toString(place));
         button[row][column].addActionListener(new ButtonListener(row, column));
-        button[row][column].setFont(new Font("", Font.PLAIN, 72));
-        button[row][column].setBorderPainted(false);
+        button[row][column].setFont(new Font("", Font.PLAIN, 55));
         mainBoard.add(button[row][column]);
         place+= 1;
       }
@@ -51,12 +50,12 @@ public class GameBoard extends JFrame {
     }
   }
 
-  public void buttonPress (int row, int col){
+  public void buttonPress (int row, int col) {
     tttBoard.setMark(row, col);
-      if (tttBoard.getMark(row, col) == TicTacToe.mark.XMARK){
+      if (tttBoard.getMark(row, col) == TicTacToe.mark.XMARK) {
         button[row][col].setLabel("X");
       }
-      else if (tttBoard.getMark(row, col) == TicTacToe.mark.OMARK){
+      else if (tttBoard.getMark(row, col) == TicTacToe.mark.OMARK) {
         button[row][col].setLabel("O");
       }
     if (tttBoard.checkForWin() == TicTacToe.mark.XMARK){
@@ -66,7 +65,7 @@ public class GameBoard extends JFrame {
           }
         };
     }
-    else if (tttBoard.checkForWin() == TicTacToe.mark.OMARK){
+    else if (tttBoard.checkForWin() == TicTacToe.mark.OMARK) {
         ActionListener taskPerformer = new ActionListener() {
           public void actionPerformed(ActionEvent e) {
             JOptionPane.showMessageDialog(null, "O is the winner!", "Game Over", JOptionPane.INFORMATION_MESSAGE);

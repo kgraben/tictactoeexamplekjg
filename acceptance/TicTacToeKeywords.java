@@ -1,9 +1,11 @@
+package edu.jsu.mcis;
 import edu.jsu.mcis.*;
+
 
 public class TicTacToeKeywords {
 	public TicTacToe t = new TicTacToe();
 
-	public void startNewGame () {
+	public void startApplication () {
 		t = new TicTacToe();
 	}
 
